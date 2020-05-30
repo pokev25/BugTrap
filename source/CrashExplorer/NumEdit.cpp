@@ -223,7 +223,7 @@ void CNumEdit::SetValue(PTSTR pszValue, int nValueSize)
 
 /**
  * @param pCreateStruct - points to a @a CREATESTRUCT structure that contains information about the window being created.
- * @return 0 to continue the creation of the window. If the application returns –1, the window will be destroyed.
+ * @return 0 to continue the creation of the window. If the application returns -1, the window will be destroyed.
  */
 LRESULT CNumEdit::OnCreate(LPCREATESTRUCT pCreateStruct)
 {

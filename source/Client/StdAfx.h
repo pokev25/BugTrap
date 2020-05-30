@@ -25,6 +25,8 @@
 /// Comment out this if you don't want to read image header
 //#define READ_IMAGEHEADER
 
+#define _WINSOCK_DEPRECATED_NO_WARNINGS
+
 #ifdef _WIN64
  #undef USE_VDMDBG
 #endif
