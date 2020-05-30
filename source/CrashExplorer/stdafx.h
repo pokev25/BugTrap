@@ -26,9 +26,9 @@
 #define _WIN32_IE 0x0600		// Change this to the appropriate value to target IE 5.0 or later.
 #endif
 
-#ifndef _RICHEDIT_VER			// Allow use of features specific to RichEdit 1.0 or later.
-#define _RICHEDIT_VER 0x0210	// Change this to the appropriate value to target RichEdit 2.0 or later.
-#endif
+//#ifndef _RICHEDIT_VER			// Allow use of features specific to RichEdit 1.0 or later.
+//#define _RICHEDIT_VER 0x0210	// Change this to the appropriate value to target RichEdit 2.0 or later.
+//#endif
 
 #define _ATL_CSTRING_EXPLICIT_CONSTRUCTORS	// some CString constructors will be explicit
 #define _SECURE_ATL     1                   // use secure sprintf functions
