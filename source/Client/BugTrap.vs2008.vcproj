@@ -6,7 +6,7 @@
 	ProjectGUID="{E8CF1ADA-264A-4127-86C2-FD7057D3792C}"
 	RootNamespace="BugTrap"
 	Keyword="Win32Proj"
-	TargetFrameworkVersion="131072"
+	TargetFrameworkVersion="196613"
 	>
 	<Platforms>
 		<Platform
@@ -1011,6 +1011,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="ws2_32.lib comctl32.lib shlwapi.lib version.lib wininet.lib nothrownew.obj"
+				OutputFile="$(OutDir)\$(ProjectName)N.dll"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 				ModuleDefinitionFile="BugTrap.def"
