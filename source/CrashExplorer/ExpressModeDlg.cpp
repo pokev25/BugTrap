@@ -253,7 +253,7 @@ void CExpressModeDlg::LoadXMLDocument(const CString& strFilePath)
 		if (! strProcessID.IsEmpty())
 		{
 			CString strExpression;
-			strExpression.Format(_T("./processes/process[id=%s]"), strProcessID);
+			strExpression.Format(_T("./processes/process[id=%s]"), (LPCTSTR)strProcessID);
 			SelectXMLNode(m_pXMLElementDocument, CT2W(strExpression), m_pXMLNodeProcess);
 		}
 	}
@@ -395,7 +395,7 @@ boost::shared_ptr<CBaseProcessor> CExpressModeDlg::GetModuleInfo(const CString& 
 		if (m_pXMLNodeProcess != NULL)
 		{
 			CString strExpression;
-			strExpression.Format(_T("./modules/module[name=\"%s\"]"), strModule);
+			strExpression.Format(_T("./modules/module[name=\"%s\"]"), (LPCTSTR)strModule);
 			CComPtr<IXMLDOMNode> pXMLNodeModule;
 			if (SelectXMLNode(m_pXMLNodeProcess, CT2CW(strExpression), pXMLNodeModule))
 			{

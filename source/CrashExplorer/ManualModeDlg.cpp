@@ -287,7 +287,7 @@ void CManualModeDlg::OnCalculate(UINT /*uNotifyCode*/, int /*nID*/, HWND /*hWndC
 		{
 			CString strFunctionName(CA2CT(pFnInfo->GetName().c_str()));
 			if (dwDisplacement64 != 0)
-				strFunctionInfo.Format(_T("%s+%I64u byte(s)"), strFunctionName, dwDisplacement64);
+				strFunctionInfo.Format(_T("%s+%I64u byte(s)"), (LPCTSTR)strFunctionName, dwDisplacement64);
 			else
 				strFunctionInfo = strFunctionName;
 		}
