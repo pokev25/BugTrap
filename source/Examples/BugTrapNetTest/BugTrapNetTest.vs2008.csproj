@@ -22,7 +22,7 @@
     <Optimize>false</Optimize>
     <TargetName>$(AssemblyName)D</TargetName>
     <OutputPath>$(SolutionDir)..\bin\</OutputPath>
-    <IntermediateOutputPath>$(SolutionDir)..\intermediate\$(AssemblyName)\$(Platform)\$(Configuration)\</IntermediateOutputPath>
+    <IntermediateOutputPath>$(SolutionDir)..\intermediate\$(AssemblyName)\$(PlatformName)\$(ConfigurationName)\</IntermediateOutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -33,7 +33,7 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>$(SolutionDir)..\bin\</OutputPath>
-    <IntermediateOutputPath>$(SolutionDir)..\intermediate\$(AssemblyName)\$(Platform)\$(Configuration)\</IntermediateOutputPath>
+    <IntermediateOutputPath>$(SolutionDir)..\intermediate\$(AssemblyName)\$(PlatformName)\$(ConfigurationName)\</IntermediateOutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>

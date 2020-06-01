@@ -18,12 +18,11 @@
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="$(SolutionDir)..\bin\"
-			IntermediateDirectory="$(SolutionDir)..\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\"
+			IntermediateDirectory="$(ProjectDir)..\..\intermediate\$(ProjectName)\$(PlatformName)\$(ConfigurationName)\"
 			ConfigurationType="1"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			ATLMinimizesCRunTimeLibraryUsage="false"
 			CharacterSet="1"
-            TargetName="$(ProjectName)D"
 			>
 			<Tool
 				Name="VCPreBuildEventTool"
@@ -114,7 +113,7 @@
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="$(SolutionDir)..\bin\"
-			IntermediateDirectory="$(SolutionDir)..\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\"
+			IntermediateDirectory="$(ProjectDir)..\..\intermediate\$(ProjectName)\$(PlatformName)\$(ConfigurationName)\"
 			ConfigurationType="1"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			ATLMinimizesCRunTimeLibraryUsage="false"

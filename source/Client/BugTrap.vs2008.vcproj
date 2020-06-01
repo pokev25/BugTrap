@@ -22,8 +22,7 @@
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="$(ProjectDir)..\..\bin\"
-			IntermediateDirectory="$(ProjectDir)..\..\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\"
-            TargetName="$(ProjectName)D"
+			IntermediateDirectory="$(ProjectDir)..\..\intermediate\$(ProjectName)\$(PlatformName)\$(ConfigurationName)\"
 			ConfigurationType="2"
 			CharacterSet="2"
 			>
@@ -74,7 +73,9 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="ws2_32.lib comctl32.lib shlwapi.lib version.lib wininet.lib nothrownew.obj"
+				OutputFile="$(OutDir)\$(ProjectName)D.dll"
 				LinkIncremental="2"
+				AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 				ModuleDefinitionFile="BugTrap.def"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)/$(TargetName).pdb"
@@ -87,7 +88,6 @@
 				DataExecutionPrevention="0"
 				ImportLibrary="$(OutDir)/$(TargetName).lib"
 				TargetMachine="1"
-                AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -115,7 +115,6 @@
 			Name="Debug|x64"
 			OutputDirectory="$(ProjectDir)..\..\bin\"
 			IntermediateDirectory="$(ProjectDir)..\..\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\"
-            TargetName="$(ProjectName)D-x64"
 			ConfigurationType="2"
 			CharacterSet="2"
 			>
@@ -168,6 +167,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="ws2_32.lib comctl32.lib shlwapi.lib version.lib wininet.lib nothrownew.obj"
 				LinkIncremental="2"
+				AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 				ModuleDefinitionFile=""
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)/$(TargetName).pdb"
@@ -180,7 +180,6 @@
 				DataExecutionPrevention="0"
 				ImportLibrary="$(OutDir)/$(TargetName).lib"
 				TargetMachine="17"
-                AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -207,8 +206,7 @@
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="$(ProjectDir)..\..\bin\"
-			IntermediateDirectory="$(ProjectDir)..\..\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\"
-            TargetName="$(ProjectName)"
+			IntermediateDirectory="$(ProjectDir)..\..\intermediate\$(ProjectName)\$(PlatformName)\$(ConfigurationName)\"
 			ConfigurationType="2"
 			CharacterSet="2"
 			>
@@ -261,6 +259,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="ws2_32.lib comctl32.lib shlwapi.lib version.lib wininet.lib nothrownew.obj"
 				LinkIncremental="1"
+				AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 				ModuleDefinitionFile="BugTrap.def"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)/$(TargetName).pdb"
@@ -275,7 +274,6 @@
 				DataExecutionPrevention="0"
 				ImportLibrary="$(OutDir)/$(TargetName).lib"
 				TargetMachine="1"
-                AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -303,7 +301,6 @@
 			Name="Release|x64"
 			OutputDirectory="$(ProjectDir)..\..\bin\"
 			IntermediateDirectory="$(ProjectDir)..\..\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\"
-            TargetName="$(ProjectName)-x64"
 			ConfigurationType="2"
 			CharacterSet="2"
 			>
@@ -357,6 +354,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="ws2_32.lib comctl32.lib shlwapi.lib version.lib wininet.lib nothrownew.obj"
 				LinkIncremental="1"
+				AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 				ModuleDefinitionFile=""
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)/$(TargetName).pdb"
@@ -371,7 +369,6 @@
 				DataExecutionPrevention="0"
 				ImportLibrary="$(OutDir)/$(TargetName).lib"
 				TargetMachine="17"
-                AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -398,8 +395,7 @@
 		<Configuration
 			Name="Unicode Debug|Win32"
 			OutputDirectory="$(ProjectDir)..\..\bin\"
-			IntermediateDirectory="$(ProjectDir)..\..\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\"
-            TargetName="$(ProjectName)UD"
+			IntermediateDirectory="$(ProjectDir)..\..\intermediate\$(ProjectName)\$(PlatformName)\$(ConfigurationName)\"
 			ConfigurationType="2"
 			CharacterSet="1"
 			>
@@ -450,7 +446,9 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="ws2_32.lib comctl32.lib shlwapi.lib version.lib wininet.lib nothrownew.obj"
+				OutputFile="$(OutDir)\$(ProjectName)UD.dll"
 				LinkIncremental="2"
+				AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 				ModuleDefinitionFile="BugTrap.def"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)/$(TargetName).pdb"
@@ -463,7 +461,6 @@
 				DataExecutionPrevention="0"
 				ImportLibrary="$(OutDir)/$(TargetName).lib"
 				TargetMachine="1"
-                AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -491,7 +488,6 @@
 			Name="Unicode Debug|x64"
 			OutputDirectory="$(ProjectDir)..\..\bin\"
 			IntermediateDirectory="$(ProjectDir)..\..\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\"
-            TargetName="$(ProjectName)UD-x64"
 			ConfigurationType="2"
 			CharacterSet="1"
 			>
@@ -544,6 +540,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="ws2_32.lib comctl32.lib shlwapi.lib version.lib wininet.lib nothrownew.obj"
 				LinkIncremental="2"
+				AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 				ModuleDefinitionFile=""
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)/$(TargetName).pdb"
@@ -556,7 +553,6 @@
 				DataExecutionPrevention="0"
 				ImportLibrary="$(OutDir)/$(TargetName).lib"
 				TargetMachine="17"
-                AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -583,8 +579,7 @@
 		<Configuration
 			Name="Unicode Release|Win32"
 			OutputDirectory="$(ProjectDir)..\..\bin\"
-			IntermediateDirectory="$(ProjectDir)..\..\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\"
-            TargetName="$(ProjectName)U"
+			IntermediateDirectory="$(ProjectDir)..\..\intermediate\$(ProjectName)\$(PlatformName)\$(ConfigurationName)\"
 			ConfigurationType="2"
 			CharacterSet="1"
 			>
@@ -636,7 +631,9 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="ws2_32.lib comctl32.lib shlwapi.lib version.lib wininet.lib nothrownew.obj"
+				OutputFile="$(OutDir)\$(ProjectName)U.dll"
 				LinkIncremental="1"
+				AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 				ModuleDefinitionFile="BugTrap.def"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)/$(TargetName).pdb"
@@ -651,7 +648,6 @@
 				DataExecutionPrevention="0"
 				ImportLibrary="$(OutDir)/$(TargetName).lib"
 				TargetMachine="1"
-                AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -679,7 +675,6 @@
 			Name="Unicode Release|x64"
 			OutputDirectory="$(ProjectDir)..\..\bin\"
 			IntermediateDirectory="$(ProjectDir)..\..\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\"
-            TargetName="$(ProjectName)U-x64"
 			ConfigurationType="2"
 			CharacterSet="1"
 			>
@@ -733,6 +728,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="ws2_32.lib comctl32.lib shlwapi.lib version.lib wininet.lib nothrownew.obj"
 				LinkIncremental="1"
+				AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 				ModuleDefinitionFile=""
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)/$(TargetName).pdb"
@@ -747,7 +743,6 @@
 				DataExecutionPrevention="0"
 				ImportLibrary="$(OutDir)/$(TargetName).lib"
 				TargetMachine="17"
-                AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 			/>
 			<Tool
 				Name="VCALinkTool"
@@ -774,8 +769,7 @@
 		<Configuration
 			Name=".NET Debug|Win32"
 			OutputDirectory="$(ProjectDir)..\..\bin\"
-			IntermediateDirectory="$(ProjectDir)..\..\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\"
-            TargetName="$(ProjectName)DN"
+			IntermediateDirectory="$(ProjectDir)..\..\intermediate\$(ProjectName)\$(PlatformName)\$(ConfigurationName)\"
 			ConfigurationType="2"
 			CharacterSet="1"
 			ManagedExtensions="1"
@@ -828,6 +822,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="ws2_32.lib comctl32.lib shlwapi.lib version.lib wininet.lib nothrownew.obj"
 				LinkIncremental="2"
+				AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 				ModuleDefinitionFile="BugTrap.def"
 				GenerateDebugInformation="true"
 				AssemblyDebug="1"
@@ -841,7 +836,6 @@
 				DataExecutionPrevention="0"
 				ImportLibrary="$(OutDir)/$(TargetName).lib"
 				TargetMachine="1"
-                AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 				KeyFile="&quot;$(InputDir)res\KeyPair.snk&quot;"
 			/>
 			<Tool
@@ -870,7 +864,6 @@
 			Name=".NET Debug|x64"
 			OutputDirectory="$(ProjectDir)..\..\bin\"
 			IntermediateDirectory="$(ProjectDir)..\..\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\"
-            TargetName="$(ProjectName)DN-x64"
 			ConfigurationType="2"
 			CharacterSet="1"
 			ManagedExtensions="1"
@@ -924,6 +917,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="ws2_32.lib comctl32.lib shlwapi.lib version.lib wininet.lib nothrownew.obj"
 				LinkIncremental="2"
+				AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 				ModuleDefinitionFile=""
 				GenerateDebugInformation="true"
 				AssemblyDebug="1"
@@ -937,7 +931,6 @@
 				DataExecutionPrevention="0"
 				ImportLibrary="$(OutDir)/$(TargetName).lib"
 				TargetMachine="17"
-                AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 				KeyFile="&quot;$(InputDir)res\KeyPair.snk&quot;"
 			/>
 			<Tool
@@ -965,8 +958,7 @@
 		<Configuration
 			Name=".NET Release|Win32"
 			OutputDirectory="$(ProjectDir)..\..\bin\"
-			IntermediateDirectory="$(ProjectDir)..\..\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\"
-            TargetName="$(ProjectName)N"
+			IntermediateDirectory="$(ProjectDir)..\..\intermediate\$(ProjectName)\$(PlatformName)\$(ConfigurationName)\"
 			ConfigurationType="2"
 			CharacterSet="1"
 			ManagedExtensions="1"
@@ -1020,6 +1012,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="ws2_32.lib comctl32.lib shlwapi.lib version.lib wininet.lib nothrownew.obj"
 				LinkIncremental="1"
+				AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 				ModuleDefinitionFile="BugTrap.def"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)/$(TargetName).pdb"
@@ -1034,7 +1027,6 @@
 				DataExecutionPrevention="0"
 				ImportLibrary="$(OutDir)/$(TargetName).lib"
 				TargetMachine="1"
-                AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 				KeyFile="&quot;$(InputDir)res\KeyPair.snk&quot;"
 			/>
 			<Tool
@@ -1063,7 +1055,6 @@
 			Name=".NET Release|x64"
 			OutputDirectory="$(ProjectDir)..\..\bin\"
 			IntermediateDirectory="$(ProjectDir)..\..\intermediate\$(ProjectName)\$(Platform)\$(Configuration)\"
-            TargetName="$(ProjectName)N-x64"
 			ConfigurationType="2"
 			CharacterSet="1"
 			ManagedExtensions="1"
@@ -1118,6 +1109,7 @@
 				Name="VCLinkerTool"
 				AdditionalDependencies="ws2_32.lib comctl32.lib shlwapi.lib version.lib wininet.lib nothrownew.obj"
 				LinkIncremental="1"
+				AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 				ModuleDefinitionFile=""
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile="$(OutDir)/$(TargetName).pdb"
@@ -1132,7 +1124,6 @@
 				DataExecutionPrevention="0"
 				ImportLibrary="$(OutDir)/$(TargetName).lib"
 				TargetMachine="17"
-                AdditionalLibraryDirectories="$(ProjectDir)..\..\lib"
 				KeyFile="&quot;$(InputDir)res\KeyPair.snk&quot;"
 			/>
 			<Tool
